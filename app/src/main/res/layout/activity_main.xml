@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ebaryice="http://schemas.android.com/apk/res/com.ebaryice.satellitemenu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResAuto">
+
+    <com.ebaryice.satellitemenu.SatelliteMenu
+        android:id="@+id/satelliteMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ebaryice:position="left_bottom"
+        ebaryice:radius="150dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6">
+            <ImageView
+                android:id="@+id/main_button"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ImageView
+            android:tag="TAG 1"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:tag="TAG 2"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:tag="TAG 3"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:tag="TAG 4"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.ebaryice.satellitemenu.SatelliteMenu>
+</RelativeLayout>
